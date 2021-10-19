@@ -20,7 +20,7 @@ public class Player implements Actor {
 
     @Override
     public int getAction(Card displayedCard) {
-    return Console.getInt("Draw card (1) or Select a card (2) ", 1, 2, "Invalid");
+    return Console.getInt("Draw card (1) or Pick a card (2) ", 1, 2, "Invalid");
     }
 
     @Override

@@ -31,11 +31,14 @@ public class Hand {
     public String getName() { return player.getName(); }
 
     public Card removeCard(int index) {
-        // take card at index out of hand and return to table.
         return cards.remove(index);
     }
 
     public int pickCard() {
         return player.pickCard(cards);
+    }
+
+    public int handSize() {
+        return cards.size();
     }
 }
